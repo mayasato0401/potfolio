@@ -1,11 +1,169 @@
 body {
+    color: #333;
+    font-family: "Life Savers", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-header img {
-width: 20%;
+h1{
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 ul {
-
-list-style: none;
+    list-style: none;
 }
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* ヘッダー */
+header {
+    height: 40px;
+    position: relative;
+}
+
+header img {
+    width: 20px;
+}
+
+header > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header li {
+    margin: 0 5px;
+}
+
+
+/* 2カラム設定 */
+main {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav {
+    min-width: 200px;
+}
+
+.content {
+    max-width: 100%;
+}
+
+
+/* 左カラム設定 */
+.name {
+    position: fixed;
+    top: 80px;
+    left: 30px;
+}
+
+.name a {
+    text-align: end;
+}
+
+.myname {
+    font-size: 28px;
+    margin: 0;
+}
+
+.occupation {
+    font-size: 20px;
+    margin: 0;
+}
+
+.sitemap {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.sitemap ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sitemap li {
+    margin: 10px 0;
+}
+
+
+/* フォーストビュー */
+#firstview img {
+    width: 100%;
+}
+
+
+/* ABOUT */
+#about, #blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about > .parts {
+    width: 90%;
+}
+
+.parts > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentbox {
+    width: 40%;
+    text-align: center;
+}
+
+.contentbox img {
+    width: 300px;
+    height: 300px;
+}
+
+.service-explanation {
+    font-size: 16px;
+    width: 300px;
+    margin: auto;
+    text-align: start;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/*  MOREボタン */
+.more button {
+    width: 30px;
+    height: 150px;
+}
+
+ 
+
+
