@@ -129,14 +129,14 @@ main {
 
 /* SERBICE/BROG */
 #service {
-    margin: 15px 0;    
+    margin: 150px 0;  
 }
 
 #blog, #works{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 500px 0;
+    margin: 150px 0;
 }
 
 #service > .parts {
