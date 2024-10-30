@@ -149,7 +149,7 @@ main {
 
 .parts > div {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -226,9 +226,10 @@ main {
 
 .banner-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
 
 .productionWorks {
@@ -262,6 +263,7 @@ footer {
 .navmap-top, .navmap-down {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 65px;
 }
 
 .navmap li {
@@ -294,3 +296,27 @@ footer {
 /* 個別ページ　ABUOT */
 
 
+
+/* 個別ページ　CONTACACT */
+.contact-means {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.contact-means a {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.contact-means h2 {
+    width: 107px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
