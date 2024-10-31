@@ -74,7 +74,7 @@ main {
 }
 
 .content {
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -226,10 +226,7 @@ main {
 
 .banner-content {
     display: flex;
-    /* justify-content: space-around; */
     justify-content: flex-start;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
 }
 
 .productionWorks {
@@ -237,6 +234,20 @@ main {
     margin: 30px;
 }
 
+/* .zoom-box {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.productionWorks.zoom {
+    display: block;
+    transition-duration: .5s;
+}
+
+.productionWorks.zoom {
+    transform: scale(1.2);
+}
+ */
 
 /*  MOREボタン */
 .more button {
@@ -247,7 +258,6 @@ main {
 
 /* フッター */
 footer {
-    max-width: 100%;
     height: 400px;
     background-color: lightgray;
     border-top-left-radius: 120px;
@@ -298,6 +308,11 @@ footer {
 
 
 /* 個別ページ　CONTACACT */
+#contact { 
+    max-width: 60%;
+    margin: auto;
+}
+
 .contact-means {
     display: flex;
     justify-content: space-around;
@@ -323,18 +338,18 @@ footer {
 }
 
 form {
-    margin: 200px 0;
+    margin: 150px 0;
 }
 
 form h2 {
     text-align: center;
 }
 
-tr {
-    height: 80px;
+#mailfrom tr {
+    height: 100px;
 }
 
-td {    
+#mailfrom td {    
     padding: 0 30px;
 }
 
@@ -349,10 +364,75 @@ td {
 }
 
 textarea {
-    width: 300px;
+    width: 500px;
+    height: 40px;
 }
 
 .wide-area {
     width: 500px;
     height: 300px;
+}
+
+.submitarea {
+    text-align: center;
+}
+
+.submit {
+    margin: 50px 0;
+    padding: 10px 50px;
+}
+
+/* PROFILEページ */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0;
+    height: 90vh;
+
+}
+
+.profileimg {
+    width: 40%;
+}
+
+#self-introduction {
+    margin-left: 50px;
+}
+
+#self-introduction table {
+    font-size: 24px;
+}
+
+#self-introduction td {
+    padding: 10px 15px;
+}
+
+.biography {
+    margin: 150px 0;
+}
+
+/* single-works */
+#works-detail {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.detail-item {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.detail-item img {
+    width: 100%;
+}
+
+.item-img, .detail-text {
+    width: 50%;
+    font-size: 24px;
+}
+
+.detail-text {
+    margin-left: 50px;
 }
